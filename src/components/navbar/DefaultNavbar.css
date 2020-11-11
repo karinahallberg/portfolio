@@ -1,6 +1,18 @@
 .nav-theme {
-  background-color: #cecef8f8;
+  /* margin: 0 auto;
+  max-width: 50em; */
+  background-color: #ffffff;
   font-size: 20px;
+  padding: 1.5rem 1;
+}
+.nav-brandtitle {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 500;
+}
+.nav-linktitle {
+  color: #333;
+  font-weight: 400;
 }
 @keyframes moveDown {
   from {
