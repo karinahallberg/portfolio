@@ -1,4 +1,6 @@
 import React from 'react';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
   const pageNumbers = [];
@@ -9,6 +11,8 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
 
   return (
     <nav>
+      <Row className="d-flex justify-content-around">
+      <Col xs={12} md={6}>
       <ul className='pagination'>
         {pageNumbers.map(number => (
           <li key={number} className='page-item'>
@@ -18,6 +22,8 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
           </li>
         ))}
       </ul>
+      </Col>
+      </Row>
     </nav>
   );
 };

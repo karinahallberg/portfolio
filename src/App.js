@@ -3,14 +3,14 @@ import React, { useState, useEffect } from 'react';
 import DefaultNavbar from '../src/components/navbar/DefaultNavbar'
 import './App.css';
 import DefaultCarousel from "./components/defaultCarousel/DefaultCarousel";
-import PersonalTitleMessage from './components/title-message/PersonalTitleMessage';
+// import PersonalTitleMessage from './components/title-message/PersonalTitleMessage';
 import About from "./pages/about/About";
 
 import Container from "react-bootstrap/Container";
 import './App.css'
 import axios from 'axios';
 import Posts from './pages/posts/Posts'
-import Pagination from './components/pagination/Pagination'
+//import Pagination from './components/pagination/Pagination'
 
 
 const App = () => {
@@ -42,28 +42,21 @@ console.log(posts)
   return (
      <div className="App" style={{ position: "relative" }}>
     <DefaultNavbar/>
+    
     <DefaultCarousel/>
-    <PersonalTitleMessage/>
     {/* About section */}
     <div>
         
           <div>
-            <Container className="container-box rounded">
-              
-                <About />
-              
+            <Container className="container-box rounded">              
+                <About />              
             </Container>
           </div>
        
       </div>
       <div>
         <Container className="container-box rounded">
-      <Posts posts={currentPosts} loading={loading} />
-      <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={posts.length}
-        paginate={paginate}
-      />
+      <Posts posts={currentPosts} loading={loading} />      
       </Container>
       </div>
     </div>

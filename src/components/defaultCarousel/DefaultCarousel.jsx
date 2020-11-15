@@ -5,10 +5,12 @@ import './DefaultCarousel.css'
 // import Slide2 from '../../assets/img/carousel/slide2.webp'
 // import Slide3 from '../../assets/img/carousel/slide3.webp'
 import ScrollDown from "../scroll-down/ScrollDown";
+import PersonalTitleMessage from '../title-message/PersonalTitleMessage';
 
 const DefaultCarousel = () => {
  return (
   <div id="home">
+    <PersonalTitleMessage/>
    <Carousel controls={false} indicators interval={2500} pause={false}>
   <Carousel.Item>
     <img

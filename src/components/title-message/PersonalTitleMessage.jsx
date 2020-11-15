@@ -35,16 +35,15 @@ const PersonalTitleMessage = () => {
     <div className="titleMessage">
       <div className="heading">
         <div className="main text-center mb-3">
-          Welcome to my digital portfolio, I am
-          <br />
-          <span>
-            <strong>Karina Hallberg</strong>
-          </span>
+          <strong>Karina Hallberg</strong>
+          <br/>
+          <span>Portfolio</span>
+          
         </div>
         <div className="sub">
           <Typewriter
             options={{
-              strings: ["DevOps Engineer at IKEA", "Work with Cloud Computing"],
+              strings: ["DevOps Engineer", "Cloud Computing"],
               autoStart: true,
               loop: true,
               delay: 50
