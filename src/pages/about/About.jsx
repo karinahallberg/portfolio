@@ -35,9 +35,9 @@ const About = () => {
         {/* buttons */}
         <Col className="d-flex justify-content-center flex-wrap">
          <div>
-                    <a href="#contact">
+                    <a href="https://twitter.com/HallbergKarina" target="_blank" rel="noopener noreferrer">
                       <Button className="m-2" variant="outline-success">
-                        Let's talk
+                        Twitter
                       </Button>
                     </a>
                   </div>
