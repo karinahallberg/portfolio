@@ -1,29 +1,17 @@
-// components
+// importing components
 import React, { useState, useEffect } from 'react';
 import DefaultNavbar from '../src/components/navbar/DefaultNavbar'
 import './App.css';
 import DefaultCarousel from "./components/defaultCarousel/DefaultCarousel";
-// import PersonalTitleMessage from './components/title-message/PersonalTitleMessage';
 import About from "./pages/about/About";
-// import Image from "./components/Image";
-// import Api from './Api'
-// import CallApi from "./CallApi";
-// import Core from "./Core";
 
 import Container from "react-bootstrap/Container";
 import './App.css'
 import axios from 'axios';
 import Posts from './pages/posts/Posts'
 //import Pagination from './components/pagination/Pagination'
-//import Main from './Main'
-// import ApiCall from "./components/ApiCall";
-
-// const API_KEY = process.env.REACT_APP_PIXABAY_API_KEY
 
 const App = () => {
- 
-  // const [image, setImage] = useState("")
-  // const [results, setResults] = useState([])
 
 const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -65,14 +53,12 @@ const [posts, setPosts] = useState([]);
     
     <DefaultCarousel/>
     {/* About section */}
-    <div>
-        
+    <div>        
           <div>
             <Container className="container-box rounded">              
                 <About />              
             </Container>
-          </div>
-       
+          </div>       
       </div>
       <div>
         <Container className="container-box rounded">
