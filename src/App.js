@@ -4,6 +4,7 @@ import DefaultNavbar from '../src/components/navbar/DefaultNavbar'
 import './App.css';
 import DefaultCarousel from "./components/defaultCarousel/DefaultCarousel";
 import About from "./pages/about/About";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 import Container from "react-bootstrap/Container";
 import './App.css'
@@ -48,6 +49,7 @@ const [posts, setPosts] = useState([]);
   //const paginate = pageNumber => setCurrentPage(pageNumber);
 
   return (
+    <>
      <div className="App" style={{ position: "relative" }}>
     <DefaultNavbar/>
     
@@ -62,11 +64,14 @@ const [posts, setPosts] = useState([]);
       </div>
       <div>
         <Container className="container-box rounded">
-      <Posts posts={currentPosts} loading={loading} />      
+          <ErrorBoundary>
+      <Posts posts={currentPosts} loading={loading} />
+      </ErrorBoundary>      
       </Container>
       </div>
           
     </div>
+    </>
   );
 }
 

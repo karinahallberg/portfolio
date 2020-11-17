@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import './Posts.css'
 
+
 const Posts = ({ posts, loading }) => {
   if (loading) {
     return <h2>Loading...</h2>;
@@ -21,11 +22,12 @@ const Posts = ({ posts, loading }) => {
 
   return (
     <div id="posts">
-    <div className="Article">
+    <div title="Article" className="Article">
       <h1 className="pt-3 text-center font-details pb-3">ARTICLES</h1>
    </div>
       <CardDeck>
         <Row className="d-flex justify-content-around">
+      
       {posts.map((post, index) => (
           <Col md={4}>
             <Card  key={post.id} className="focus mt-2 mb-2">
@@ -46,9 +48,11 @@ const Posts = ({ posts, loading }) => {
       </Col>
               
       ))}
+     
       </Row>
       </CardDeck>
     </div>
+    
   );
 };
 
