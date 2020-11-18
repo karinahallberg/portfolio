@@ -65,9 +65,9 @@ const [posts, setPosts] = useState([]);
       <div>
         <Container className="container-box rounded">
           <ErrorBoundary>
-      <Posts posts={currentPosts} loading={loading} />
-      </ErrorBoundary>      
-      </Container>
+            <Posts posts={currentPosts} loading={loading} />
+          </ErrorBoundary>      
+        </Container>
       </div>
           
     </div>
